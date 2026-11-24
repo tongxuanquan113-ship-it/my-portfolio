@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Thanh menu */
+nav {
+    background: #263238;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #64b5f6;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #64b5f6;
+}
+
+/* Trang chủ */
+.hero {
+    background: #37474f;
+    color: white;
+    padding: 60px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro {
+    flex: 1;
+}
+
+.intro h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.avatar img {
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2196f3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Dự án */
+section {
+    padding: 40px 8%;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #1976d2;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+/* Trang giới thiệu và liên hệ */
+.content {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    min-height: 500px;
+}
+
+.content h1 {
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    margin-top: 25px;
+}
+
+.about-img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form liên hệ */
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form button {
+    padding: 12px 25px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0d47a1;
+}
+
+/* Chân trang */
+footer {
+    background: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Giao diện điện thoại */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu a {
+        margin: 0 8px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
